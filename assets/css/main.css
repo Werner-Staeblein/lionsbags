@@ -66,10 +66,13 @@ main{
 .placeholder3{
   color: red;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
+
+
 .fliesstext{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -787,14 +790,14 @@ body.mobile-nav-active .mobile-nav-show {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: var(--color-default);
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #999;
   margin: 0;
 }

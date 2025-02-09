@@ -69,8 +69,6 @@ main{
   font-size: 1.3rem;
 }
 
-
-
 .fliesstext{
   font-size: 1.5rem;
 }
@@ -134,7 +132,13 @@ section:first-of-type {
   padding: 0;    
 }
 
-.header .logo h1 {
+.topbar h1{
+  line-height: 1.5;
+}
+
+/* commented out am 09.02 --> Effekt?? */
+
+/* .header .logo h1 {
   font-size: 30px;
   margin: 0;
   font-weight: 600;
@@ -145,7 +149,7 @@ section:first-of-type {
 
 .header .logo h1 span {
   color: #f96f59;
-}
+} */
 
 .sticked-header-offset {
   margin-top: 70px;
@@ -172,9 +176,9 @@ section {
 
 .logoandclubname h1 {
   font-size: 1.7rem;
-  font-family: 'Arial', sans-serif; /* Or any other font */
-  margin-top: 0.6rem; /* Remove default margin */
-  color: white; /* Text color */
+  font-family: 'Arial', sans-serif;
+  margin-top: 0.6rem;
+  color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   text-align: center;
 }
@@ -784,20 +788,20 @@ body.mobile-nav-active .mobile-nav-show {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 8rem;
+  width: 6rem;
   border-radius: 50px;
-  margin-right: 15px;
+  margin-right: 1.2rem;
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin: 17px 0 5px 0;
   color: var(--color-default);
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #999;
   margin: 0;
 }
@@ -937,6 +941,36 @@ body.mobile-nav-active .mobile-nav-show {
   box-shadow: none;
 }
 
+/*--------------------------------------------------------------
+# bag highlights
+--------------------------------------------------------------*/
+
+.carousel-item {
+  position: relative;
+  height: 16rem;
+  background-color: rgba(243, 203, 84, 0.2);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;  
+  left: 10%;
+  width: 80%;
+  text-align: left;
+}
+
+.diagonal-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  font-size: 2rem;
+  color: var(--color-default);
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 37%;
+}
 
 /*--------------------------------------------------------------
 # Scroll top button
@@ -972,7 +1006,6 @@ body.mobile-nav-active .mobile-nav-show {
   bottom: 15px;
 }
 
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -982,11 +1015,11 @@ body.mobile-nav-active .mobile-nav-show {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 999999; /* Ensure it's on top of all other content */
-  background-color: #fff; /* White background */
-  visibility: visible; /* Make sure it's visible */
-  opacity: 1; /* Fully visible */
-  transition: opacity 1s ease-out; /* Fade-out transition */
+  z-index: 999999; /*Preloader muss on top des anderen content sein*/
+  background-color: var(--color-default);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 
 #preloader:before {
@@ -996,7 +1029,7 @@ body.mobile-nav-active .mobile-nav-show {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 6px solid #fff;
-  border-color: #007bff transparent #007bff transparent; /* Example primary color */
+  border-color: #007bff transparent #007bff transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1154,117 +1187,24 @@ body.mobile-nav-active .mobile-nav-show {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
 .footer {
-  font-size: 14px;
-  background-color: var(--color-primary);
-  padding: 50px 0;
+  font-size: 1.3rem;
+  background-color: var(--color-default);
+  padding: 0.5rem 0;
   color: white;
 }
 
-.footer .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 25px;
+#lionslogo_footer {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  margin-top: 0.5rem;
 }
 
-.footer .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-info .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
-  font-family: var(--font-primary);
-}
-
-.footer .footer-info p {
-  font-size: 14px;
-  font-family: var(--font-primary);
-}
-
-.footer .social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .social-links a:hover {
-  color: #fff;
-  border-color: #fff;
-}
-
-.footer h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-links ul i {
-  padding-right: 2px;
-  color: rgba(2, 126, 190, 0.8);
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-links ul a:hover {
-  color: #fff;
-}
-
-.footer .footer-contact p {
-  line-height: 26px;
-}
-
-.footer .copyright {
-  text-align: center;
-}
-
-.footer .credits {
-  padding-top: 4px;
-  text-align: center;
-  font-size: 13px;
-}
-
-.footer .credits a {
-  color: #fff;
-}
+/*--------------------------------------------------------------
+# Impressum 
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Media Queries Tablets (>768px)

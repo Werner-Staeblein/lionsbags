@@ -176,7 +176,7 @@ section {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 
-@media (min-width: 1280px) {
+@media (min-width: 1956px) {
 
 body{
   max-width: 70%;
@@ -241,7 +241,7 @@ display: none;
 }
 
 /* Mobile Navigation */
-@media (max-width: 1279px) {
+@media (max-width: 1956px) {
   /* Navbar styling */
 .navbar {
   position: fixed;
@@ -937,11 +937,11 @@ iphone 5) | breakpoint for larger smartphones is 360px
 
 .slogan-overlay{
     font-size: 2.6rem;
-   }
+  }
 
- .slogan-overlay h3{
+.slogan-overlay h3{
   font-size: 2.6rem;
- } 
+} 
 
 .testimonials .testimonial-item .testimonial-img {
   margin-right: 5rem;
@@ -969,10 +969,6 @@ iphone 5) | breakpoint for larger smartphones is 360px
   margin-bottom: 0.4rem;
 }
 
-.recipients_text:nth-child(1) {
-  padding-top: 2rem;
-}
-
 .recipients .org-img{
   max-width: 8rem;
 }
@@ -994,5 +990,87 @@ with 767px (all other tablets above at 800px and above)
     font-size: 4rem;
   }
 
+  section {
+    margin-top: 0.2rem;
+  }
 
+  .testimonials .testimonial-item .testimonial-img {
+    margin-right: 11rem;
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 2.2rem;
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 1.6rem;
+  }
+ 
+
+}
+
+
+@media (min-width: 800px) {
+  
+    .carousel-item {
+      max-width: 60%;  /* Set max-width of carousel-item to 60% */
+      margin: 0 auto;  /* Center the carousel-item */
+    }
+  
+    .carousel-inner {
+      display: flex;  /* Enable flexbox for carousel-inner */
+      justify-content: center;  /* Center the carousel-items */
+    }
+  
+    /* Adjust the position of the prev and next buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 50%;  /* Vertically center the buttons */
+      transform: translateY(-50%);  /* Correct vertical alignment */
+      z-index: 10;  /* Ensure buttons are above the carousel item */
+    }
+  
+    /* Move the prev and next buttons closer to the carousel item */
+    .carousel-control-prev {
+      left: 10px;  /* Adjust the distance from the left side of the carousel item */
+    }
+  
+    .carousel-control-next {
+      right: 10px;  /* Adjust the distance from the right side of the carousel item */
+    } 
+
+  @media (min-width: 1200px) {
+
+      .testimonials .testimonial-item .testimonial-img {
+        margin-right: 1.5rem;
+      }
+      
+      .testimonials .testimonial-item h3 {
+        font-size: 2rem;
+      }
+      
+      .testimonials .testimonial-item h4 {
+        font-size: 1.4rem;
+      }
+
+      .faq{
+        padding-top: 5rem;
+      }
+
+      .section-header{
+        padding-top: 1.5rem;
+      }
+      .section-header h2{
+        font-size: 4.5rem;
+      }
+    
+      .faq .section-header h2{
+        font-size: 4rem;
+      }
+
+      .fliesstext, .recipients_text{
+        font-size: 2.2rem;
+      }
+}
 }

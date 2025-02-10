@@ -726,11 +726,11 @@ body.mobile-nav-active .mobile-nav-show {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 6px solid #fff;
+  border: 1rem solid #fff;
   border-color: #007bff transparent #007bff transparent;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 10rem;
+  height: 10rem;
   animation: animate-preloader 1.5s linear infinite;
 }
 

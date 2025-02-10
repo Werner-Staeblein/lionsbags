@@ -15,7 +15,7 @@ if (preloader) {
     setTimeout(() => {
       preloader.remove();  // Remove the preloader element after fade-out
     }, 1000);  // 1 second delay to match the fade-out transition duration
-  }, 300); // Show preloader for 10 seconds before fading out
+  }, 1500); // Show preloader for 10 seconds before fading out
 }
 });
 

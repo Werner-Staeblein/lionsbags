@@ -723,8 +723,8 @@ body.mobile-nav-active .mobile-nav-show {
 #preloader:before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 33%;
   transform: translate(-50%, -50%);
   border: 1rem solid #fff;
   border-color: #007bff transparent #007bff transparent;
@@ -1005,7 +1005,12 @@ with 767px (all other tablets above at 800px and above)
   .testimonials .testimonial-item h4 {
     font-size: 1.6rem;
   }
- 
+  
+  #preloader:before {
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);  
+}
 
 }
 

@@ -121,13 +121,7 @@ if (closeButton) {
     })
   });
 
-  /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
+  
   /**
    * Scroll top button
    */

@@ -13,7 +13,7 @@
 }
 
 :root {
-  --section-head-font-size: 2.5rem;
+  --section-head-font-size: 2rem;
 }
 
 /* Colors */
@@ -69,7 +69,7 @@ main{
 .placeholder3{
   color: red;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .fliesstext{
@@ -100,7 +100,7 @@ section:first-of-type {
 .section-header h2 {
   font-size: var(--section-head-font-size);
   font-family: var(--font-default);
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -381,7 +381,7 @@ body.mobile-nav-active .mobile-nav-show {
 .slogan-overlay {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 5%;
   color: var(--color-slogan);
   font-weight: bold;
   line-height: 2.0;
@@ -392,7 +392,7 @@ body.mobile-nav-active .mobile-nav-show {
 .slogan-overlay h3 {
   margin: 0;
   line-height: 1.2;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 /* Optional: Add some padding to the section if needed */
 .section-header {
@@ -410,9 +410,38 @@ body.mobile-nav-active .mobile-nav-show {
   text-align: center;
 }
 
+.abgabestellen_img{
+  max-width: 3rem; 
+  height: auto;
+}
+
+
 /*--------------------------------------------------------------
 # Section Recipients (no custom styling so far, inherits)  
 --------------------------------------------------------------*/
+.recipients .small_phone{
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.recipients .recipients_text{
+  text-align: left;
+  width: 100%;
+}
+/* Default layout for small screens (below 640px): Stack vertically */
+.recipients-row {
+  display: block; /* Stack the content vertically on small screens */
+}
+
+.recipients_text,
+.image-container-orgs {
+  width: 100%; /* Full width for stacking */
+}
+
+.recipients .org-img{
+  max-width: 6rem;
+  width: auto;
+}
 
 
 /*--------------------------------------------------------------
@@ -461,7 +490,7 @@ body.mobile-nav-active .mobile-nav-show {
 .testimonials .testimonial-item .testimonial-img {
   width: 6rem;
   border-radius: 50px;
-  margin-right: 1.2rem;
+  margin-right: 0.7rem;
 }
 
 .testimonials .testimonial-item h3 {
@@ -876,6 +905,8 @@ body.mobile-nav-active .mobile-nav-show {
 --------------------------------------------------------------*/
 
 
+
+
 /*--------------------------------------------------------------
 # Media Queries Larger Smartphones (larger than default 
 iphone 5) | breakpoint for larger smartphones is 360px
@@ -883,6 +914,19 @@ iphone 5) | breakpoint for larger smartphones is 360px
 
 @media (min-width: 360px) {
 
+.placeholder1,
+.placeholder2,
+.placeholder3{
+  font-size: 1.1rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem; 
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  margin-right: 1.6rem;
+}
 }
 
 /*--------------------------------------------------------------
@@ -890,7 +934,48 @@ iphone 5) | breakpoint for larger smartphones is 360px
 --------------------------------------------------------------*/
 
 @media (min-width: 640px) {
-  
+
+.slogan-overlay{
+    font-size: 2.6rem;
+   }
+
+ .slogan-overlay h3{
+  font-size: 2.6rem;
+ } 
+
+.testimonials .testimonial-item .testimonial-img {
+  margin-right: 5rem;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 1.8rem;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 1.4rem;
+}
+
+.abgabestellen_img {
+  max-width: 3rem;
+}
+
+.text-placeholder {
+  width: 50%;
+  padding-right: 5px;
+}
+
+.recipients_text {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.recipients_text:nth-child(1) {
+  padding-top: 2rem;
+}
+
+.recipients .org-img{
+  max-width: 8rem;
+}
 }
 
 /*--------------------------------------------------------------
